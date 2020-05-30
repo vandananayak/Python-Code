@@ -1,0 +1,41 @@
+python embedded sql is sqllite
+dowload and install sqllite from https://sqlitebrowser.org/
+save it in desktop for easy access
+open sqllite once the installation is done
+create new database and save in some particular folder. I recommend to put in the place where you have all python files saved
+after creating the data base close the window that pops up 
+go to execute sql for creating a table
+
+CREATE TABLE users(
+name VARCHAAR(128),
+email VARCHAR(128)
+)
+users is the name of the table
+within {} you will have attributes or column name
+VARCHAR is type for strings
+128 is the maximum size for VARCHAR in the disk so you cant put the charecters beyond this number
+press the play button to run
+
+go to browse data ->new record
+then enter the details name and email..Note you can have any kind of data
+
+we can insert the data using sql statement as well
+INSERT INTO users(name,email) VALUES ('bae','bae@gmail.com')
+and run in execute sql
+
+to delete a row
+DELETE FROM users WHERE email='bae@gmail.com'
+
+to update the row of existing data
+UPDATE users set name='charlie' WHERE email='bae@gmail.com'
+
+retrieving the record
+SELECT * FROM users WHERE name='charlie'
+gives the value name and email of charlie
+SELECT * FROM users
+will give the whole table 
+
+to sort the data
+SELECT * from user ORDER BY name
+
+
