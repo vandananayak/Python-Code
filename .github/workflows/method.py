@@ -4,7 +4,7 @@ class Parrot:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
+   
     # instance method
     def sing(self, song):
         return "{} sings {}".format(self.name, song)
